@@ -24,42 +24,63 @@ Smart Expense Tracker API is a REST API built using FastAPI. It helps users mana
 
 ## 📂 Project Structure
 
+```
 expense-tracker-api/
 │
 ├── src/
-│ ├── main.py
-│ ├── routes.py
-│ ├── models.py
-│ └── storage.py
+│   ├── main.py
+│   ├── routes.py
+│   ├── models.py
+│   └── storage.py
 │
 ├── tests/
-│ └── test_api.py
+│   └── test_api.py
 │
 ├── expenses.json
 ├── requirements.txt
+├── AI_NOTES.md
+├── Dockerfile
 └── README.md
+```
+
+## 📦 Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
 
 ## ▶️ Run Project
 
+```bash
 python -m uvicorn src.main:app --reload
+```
+
+The API will be available at:
+
+```
+http://127.0.0.1:8000
+```
+
+Swagger documentation:
+
+```
+http://127.0.0.1:8000/docs
+```
 
 ## 📖 API Endpoints
 
-GET /
-
-POST /expenses
-
-GET /expenses
-
-GET /expenses/category/{category}
-
-GET /expenses/total
-
-DELETE /expenses/{id}
+- `GET /`
+- `POST /expenses`
+- `GET /expenses`
+- `GET /expenses/category/{category}`
+- `GET /expenses/total`
+- `DELETE /expenses/{id}`
 
 ## 🧪 Run Tests
 
+```bash
 python -m pytest
+```
 
 ## 👨‍💻 Author
 
